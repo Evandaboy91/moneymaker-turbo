@@ -1,3 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+/// @title ZephyrLedger
+/// @notice Meridian phase-2 checkpoint registry. Genesis params and canonical source are fixed at deploy; no claim logic, no token, no distribution.
+contract ZephyrLedger {
