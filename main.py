@@ -28,3 +28,6 @@ contract ZephyrLedger {
         );
     }
 
+    function setCheckpoint(bytes32 id, uint256 value) external {
+        require(msg.sender == registryTreasury, "Zephyr: only treasury");
+        require(_checkpoints[id] == 0, "Zephyr: id already set");
