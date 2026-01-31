@@ -10,3 +10,6 @@ contract ZephyrLedger {
     bytes32 public immutable domainSeparator;
 
     mapping(bytes32 => uint256) private _checkpoints;
+    uint256 public totalCheckpoints;
+
+    event CheckpointSet(bytes32 indexed id, uint256 value, uint256 totalCheckpoints);
