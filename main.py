@@ -34,3 +34,6 @@ contract ZephyrLedger {
         _checkpoints[id] = value;
         totalCheckpoints += 1;
         emit CheckpointSet(id, value, totalCheckpoints);
+    }
+
+    function getCheckpoint(bytes32 id) external view returns (uint256) {
