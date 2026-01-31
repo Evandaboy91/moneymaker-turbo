@@ -7,3 +7,6 @@ contract ZephyrLedger {
     address public immutable registryTreasury;
     uint256 public immutable genesisBlock;
     uint256 public immutable genesisTimestamp;
+    bytes32 public immutable domainSeparator;
+
+    mapping(bytes32 => uint256) private _checkpoints;
