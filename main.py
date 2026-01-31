@@ -37,3 +37,6 @@ contract ZephyrLedger {
     }
 
     function getCheckpoint(bytes32 id) external view returns (uint256) {
+        return _checkpoints[id];
+    }
+
