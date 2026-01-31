@@ -22,3 +22,6 @@ contract ZephyrLedger {
             abi.encodePacked(
                 block.chainid,
                 address(this),
+                block.number,
+                block.timestamp
+            )
