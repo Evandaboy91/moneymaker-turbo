@@ -40,3 +40,6 @@ contract ZephyrLedger {
         return _checkpoints[id];
     }
 
+    function seal() external view returns (bytes32) {
+        return keccak256(
+            abi.encodePacked(
