@@ -13,3 +13,6 @@ contract ZephyrLedger {
     uint256 public totalCheckpoints;
 
     event CheckpointSet(bytes32 indexed id, uint256 value, uint256 totalCheckpoints);
+
+    constructor() {
+        registryTreasury = msg.sender;
