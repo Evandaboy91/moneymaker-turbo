@@ -19,3 +19,6 @@ contract ZephyrLedger {
         genesisBlock = block.number;
         genesisTimestamp = block.timestamp;
         domainSeparator = keccak256(
+            abi.encodePacked(
+                block.chainid,
+                address(this),
