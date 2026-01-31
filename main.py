@@ -16,3 +16,6 @@ contract ZephyrLedger {
 
     constructor() {
         registryTreasury = msg.sender;
+        genesisBlock = block.number;
+        genesisTimestamp = block.timestamp;
+        domainSeparator = keccak256(
