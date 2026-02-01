@@ -49,3 +49,6 @@ contract ZephyrLedger {
                 genesisTimestamp
             )
         );
+    }
+}
+
