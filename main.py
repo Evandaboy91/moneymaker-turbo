@@ -46,3 +46,6 @@ contract ZephyrLedger {
                 domainSeparator,
                 totalCheckpoints,
                 genesisBlock,
+                genesisTimestamp
+            )
+        );
