@@ -43,3 +43,6 @@ contract ZephyrLedger {
     function seal() external view returns (bytes32) {
         return keccak256(
             abi.encodePacked(
+                domainSeparator,
+                totalCheckpoints,
+                genesisBlock,
